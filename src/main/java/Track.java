@@ -1,12 +1,12 @@
 import java.util.Date;
 
-public class Track {
+public class Track extends DAO {
 
     private int id;
     private String nom;
-    private Date d;
+    private int d;
 
-    public Track(int id, String nom, Date d) {
+    public Track(int id, String nom, int d) {
         this.id = id;
         this.nom = nom;
         this.d = d;
@@ -20,7 +20,7 @@ public class Track {
         return nom;
     }
 
-    public Date getD() {
+    public int getD() {
         return d;
     }
 
@@ -32,7 +32,7 @@ public class Track {
         this.nom = nom;
     }
 
-    public void setD(Date d) {
+    public void setD(int d) {
         this.d = d;
     }
 }
